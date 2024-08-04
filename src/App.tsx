@@ -9,6 +9,7 @@ function App() {
   return (
     <>
     <button >cick me</button>
+    
       <div className = 'bg-red-600'>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
