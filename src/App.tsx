@@ -6,8 +6,10 @@ import './App.css'
 function App() {
   return (
     <>
+
       <Nav></Nav>
       <Content></Content>
+
     </>
   )
 }
