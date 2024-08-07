@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import logoV from './assets/logo.png'
 import SVG from './assets/chevron-down.png'
 import './Nav.css'
