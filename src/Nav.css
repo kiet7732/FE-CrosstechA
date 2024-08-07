@@ -1,0 +1,239 @@
+
+body {
+  position: relative;
+  width: 1440px;
+  height: 2336px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #EADBD7 100%);
+  margin: auto;
+}
+
+.Nav {
+  position: absolute;
+  width: 100%;
+  height: 98px;
+  left: 0px;
+  top: 0px;
+  border-bottom: #dadada 1px solid;
+}
+
+.Nav-center {
+  position: absolute;
+  width: 1220px;
+  height: 40px;
+  left: 110px;
+  top: 29px;
+}
+
+#LogoV {
+  position: absolute;
+  width: 52.8px;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+
+}
+
+.Item-N {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+
+  position: absolute;
+  width: 407px;
+  height: 24px;
+  left: calc(50% - 407px/2 - 0.5px);
+  top: 10.5px;
+
+}
+
+.Item-N:first-child {
+  width: 44px;
+  height: 19px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+}
+
+.Item-N:nth-child(2) {
+  width: 45px;
+  height: 19px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8C8C8C;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.Item-N:nth-child(3) {
+  width: 91px;
+  height: 19px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8C8C8C;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.Item-N:nth-child(4) {
+  width: 37px;
+  height: 19px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8C8C8C;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* .Item-N:nth-child(5) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+  width: 38px;
+  height: 19px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+} */
+
+.More {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  height: 24px;
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+  color: #CA5C3B;
+
+}
+
+.More div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+
+  width: 38px;
+  height: 19px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+
+#SVG {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+}
+
+.Mode-N {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding: 2px 12px 2px 2px;
+  gap: 12px;
+
+  position: absolute;
+  width: 150px;
+  height: 34px;
+  left: 1070px;
+  top: 3px;
+
+  background: #EEC5C7;
+  border-radius: 100px;
+
+
+}
+
+#LogoV,
+.Item-N div,
+.Mode-N {
+  cursor: pointer;
+}
+
+#N-1,
+#N-2 {
+
+  width: 49%;
+  height: 22px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+
+  /* White */
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+
+.Mode-N a {
+  position: relative;
+  z-index: 3;
+  /* Đảm bảo phần tử a nổi hơn */
+
+}
+
+.boder {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 12px;
+  gap: 10px;
+  width: 76px;
+  height: 30px;
+
+  background: #CA5C3B;
+  border-radius: 100px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+  
+}
+
+.shifted {
+  margin-left: 70px;
+  z-index: 1;
+}
