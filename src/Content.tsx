@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import './Content.css'
 import icon from './assets/Vector.jpg'
 import Ball from './assets/ball.png'
