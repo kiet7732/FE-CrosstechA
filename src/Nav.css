@@ -11,7 +11,6 @@ body {
 .Nav {
   width: 1440px;
   height: 98px;
-  border-bottom: #dadada 1px solid;
   margin: 0 auto; /* Thêm margin: 0 auto; */
 }
 
@@ -170,6 +169,7 @@ body {
   border-radius: 100px;
 
 
+  position: relative;
 }
 
 #LogoV,
@@ -177,11 +177,10 @@ body {
 .Mode-N {
   cursor: pointer;
 }
-
 #N-1,
 #N-2 {
 
-  width: 49%;
+  width: 65px;
   height: 22px;
 
   font-family: 'Roboto';
@@ -193,21 +192,20 @@ body {
 
   /* White */
   color: #000000;
-
+ 
 
   /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
+ z-index: 3;
+  position: absolute;transition: 0.3s ease-in-out;
 
 }
-
-.Mode-N a {
-  position: relative;
-  z-index: 3;
-  /* Đảm bảo phần tử a nổi hơn */
-
+#N-2{
+  margin-left: 80px;
 }
+ 
 
 .boder {
   position: absolute;
@@ -227,12 +225,13 @@ body {
   order: 0;
   flex-grow: 0;
 
-  z-index: 1;
-  transition: 0.3s ease-in-out;
-  
+
+  transition: 0.3s ease-in-out;   
+ 
 }
 
 .shifted {
   margin-left: 70px;
+
   z-index: 1;
 }

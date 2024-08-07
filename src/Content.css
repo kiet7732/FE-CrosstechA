@@ -399,6 +399,7 @@
     order: 0;
     flex-grow: 0;
 
+
 }
 
 .Chevron img {
@@ -425,7 +426,7 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-
+    cursor: pointer;
 }
 
 .Box-Icon img {
@@ -678,6 +679,7 @@
     order: 0;
     flex-grow: 0;
 
+    cursor: pointer;
 }
 
 

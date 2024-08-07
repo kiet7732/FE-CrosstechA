@@ -29,8 +29,8 @@ function Nav() {
                 </div>
                 <div className="Mode-N" onClick={handleClick}>
                     <span className={`boder ${isShifted ? 'shifted' : ''}`}></span>
-                    <div id="N-1" style={{ color: !isShifted ? 'white' : 'black' }}><a>Mainnet</a></div>
-                    <div id="N-2" style={{ color: isShifted ? 'white' : 'black' }}><a>Testnet</a></div>
+                    <div id="N-1"  style={{ color: !isShifted ? 'white' : 'black' }}><a>Mainnet</a></div>
+                    <div id="N-2"  style={{ color: isShifted ? 'white' : 'black' }}><a>Testnet</a></div>
                 </div>
             </div>
         </div>
