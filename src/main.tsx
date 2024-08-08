@@ -9,7 +9,6 @@ import Connect from './Content.tsx'
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <App />
-    <Nav/>
-    <Connect/>
+    
   </React.StrictMode>,
 )

@@ -28,7 +28,7 @@ function Nav() {
               </div>
             </div>
           </div>
-          <div className="flex flex-row items-center absolute w-[150px] h-[34px] left-[1070px] top-[3px] bg-[#EEC5C7] rounded-full p-[2px] gap-[12px]" onClick={handleClick}>
+          <div className="flex flex-row items-center absolute w-[150px] h-[34px] left-[1070px] top-[3px] bg-[#EEC5C7] rounded-full p-[2px] gap-[12px] cursor-pointer" onClick={handleClick}>
             <span className={`absolute flex flex-row justify-center items-center w-[76px] h-[30px] bg-[#CA5C3B] rounded-full transition-all duration-300 ease-in-out ${isShifted ? 'ml-[70px]' : ''}`}></span>
             <div id="" className={`w-[65px] h-[22px] font-roboto font-medium text-[14px] leading-[22px] text-black flex-none order-0 flex-grow-0 z-30 absolute transition-all duration-300 ease-in-out ml-[10px] cursor-pointer ${!isShifted ? 'text-white' : 'text-black'}`}><a>Mainnet</a></div>
             <div id="" className={`w-[65px] h-[22px] font-roboto font-medium text-[14px] leading-[22px] text-black flex-none order-0 flex-grow-0 z-30 absolute transition-all duration-300 ease-in-out  ml-[85px] cursor-pointer ${isShifted ? 'text-white' : 'text-black'}`}><a>Testnet</a></div>

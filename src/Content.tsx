@@ -13,9 +13,11 @@ import right from './assets/chevron-right.png'
 function Content() {
     return (
         <>
-            <div className="relative">
-                <img className="absolute w-10 h-9 left-[1302px] top-[140.47px] bg-[#D27815] transform -rotate-[9.29deg]" src={icon} alt="" />
-                <img className="absolute w-10 h-9 left-[1199px] top-[58.31px] bg-[#D27815] transform -rotate-[9.51deg]" src={icon} alt="" />
+            <div className="">
+                <img className="absolute w-10 h-9 left-[1402px] top-[240.47px] bg-[#D27815] transform -rotate-[9.29deg]" src={icon} alt="" />
+                <img className="absolute w-10 h-9 left-[1249px] top-[149.31px] bg-[#D27815] transform -rotate-[9.51deg]" src={icon} alt="" />
+                <img className="absolute w-10 h-9 left-[1362px] top-[160.47px] bg-[#D27815] transform -rotate-[9.29deg]" src={icon} alt="" />
+                <img className="absolute w-10 h-9 left-[1299px] top-[219.31px] bg-[#D27815] transform -rotate-[9.51deg]" src={icon} alt="" />
             </div>
             <div className="absolute flex flex-col items-start gap-20 w-[1008px] h-[2006px] left-[216px] top-[158px]">
                 <div className="flex flex-col items-center gap-4 w-[1008px] h-[297px]">
