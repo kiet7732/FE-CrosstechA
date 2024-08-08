@@ -12,23 +12,27 @@ function Nav() {
   };
 
   return (
-    <div className="Nav">
-      <div className="Nav-center">
-        <img src={logoV} id="LogoV" className="absolute w-14 h-10" />
-        <div className="Item-N flex flex-row items-center absolute w-[407px] h-6 left-1/2 transform -translate-x-1/2 top-2.5 gap-8">
-          <div className="font-roboto font-medium text-lg leading-5">Tapos</div>
-          <div className="font-roboto font-medium text-lg leading-5 text-gray-500">Wallet</div>
-          <div className="font-roboto font-medium text-lg leading-5 text-gray-500">Leaderboard</div>
-          <div className="font-roboto font-medium text-lg leading-5 text-gray-500">Shop</div>
-          <div className="More flex flex-row items-center text-orange-600">
-            <div className="font-roboto font-medium text-lg leading-5">More</div>
-            <img src={SVG} id="SVG" className="w-6 h-6" />
+    <div className="w-full h-[2336px] bg-gradient-to-b from-white to-[#EADBD7] flex justify-center items-start">
+      <div className="w-[1440px] h-[98px] mx-auto relative">
+        <div className="absolute w-[1220px] h-[40px] left-[110px] top-[29px]">
+          <img src={logoV} className="absolute w-[52.8px] h-[40px] left-0 top-0" alt="Logo" />
+          <div className="flex flex-row items-center absolute w-[407px] h-[24px] left-1/2 transform -translate-x-1/2 top-[10.5px] gap-[32px]">
+            <div className="font-roboto font-medium text-[16px] leading-[19px] text-gray-500">Tapos</div>
+            <div className="font-roboto font-medium text-[16px] leading-[19px] text-gray-500">Wallet</div>
+            <div className="font-roboto font-medium text-[16px] leading-[19px] text-gray-500">Leaderboard</div>
+            <div className="font-roboto font-medium text-[16px] leading-[19px] text-gray-500">Shop</div>
+            <div className="flex flex-row items-center text-[#CA5C3B]">
+              <div className="flex flex-row items-center gap-[4px] w-[38px] h-[19px]">
+                <span className="text-[#CA5C3B]">More</span>
+                <img src={SVG} className="w-[24px] h-[24px]" alt="Dropdown Icon" />
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="Mode-N flex flex-row items-center absolute w-40 h-8 left-[1070px] top-0.75 bg-pink-200 rounded-full relative p-1.5 gap-3" onClick={handleClick}>
-          <span className={`boder ${isShifted ? 'shifted' : ''} absolute flex flex-row justify-center items-center w-19 h-7 bg-orange-600 rounded-full transition-all duration-300 ease-in-out`}></span>
-          <div id="N-1" className="absolute left-1.5 z-3 text-sm font-medium leading-[22px]" style={{ color: !isShifted ? 'white' : 'black' }}><a>Mainnet</a></div>
-          <div id="N-2" className="absolute right-1.5 z-3 text-sm font-medium leading-[22px]" style={{ color: isShifted ? 'white' : 'black' }}><a>Testnet</a></div>
+          <div className="flex flex-row items-center absolute w-[150px] h-[34px] left-[1070px] top-[3px] bg-[#EEC5C7] rounded-full p-[2px] gap-[12px]" onClick={handleClick}>
+            <span className={`absolute flex flex-row justify-center items-center w-[76px] h-[30px] bg-[#CA5C3B] rounded-full transition-all duration-300 ease-in-out ${isShifted ? 'ml-[70px]' : ''}`}></span>
+            <div id="" className={`w-[65px] h-[22px] font-roboto font-medium text-[14px] leading-[22px] text-black flex-none order-0 flex-grow-0 z-30 absolute transition-all duration-300 ease-in-out ml-[10px] cursor-pointer ${!isShifted ? 'text-white' : 'text-black'}`}><a>Mainnet</a></div>
+            <div id="" className={`w-[65px] h-[22px] font-roboto font-medium text-[14px] leading-[22px] text-black flex-none order-0 flex-grow-0 z-30 absolute transition-all duration-300 ease-in-out  ml-[85px] cursor-pointer ${isShifted ? 'text-white' : 'text-black'}`}><a>Testnet</a></div>
+          </div>
         </div>
       </div>
     </div>
