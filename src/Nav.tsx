@@ -12,15 +12,15 @@ function Nav() {
   };
 
   return (
-    <div className="w-full h-[2336px] bg-gradient-to-b from-white to-[#EADBD7] flex justify-center items-start">
+    <div className="w-full h-[2336px] bg-gradient-to-b from-white to-[#EADBD7] flex justify-center items-start absolute">
       <div className="w-[1440px] h-[98px] mx-auto relative">
         <div className="absolute w-[1220px] h-[40px] left-[110px] top-[29px]">
-          <img src={logoV} className="absolute w-[52.8px] h-[40px] left-0 top-0" alt="Logo" />
+          <img src={logoV} className="absolute w-[52.8px] h-[40px] left-0 top-0 cursor-pointer" alt="Logo" />
           <div className="flex flex-row items-center absolute w-[407px] h-[24px] left-1/2 transform -translate-x-1/2 top-[10.5px] gap-[32px]">
-            <div className="font-roboto font-medium text-[16px] leading-[19px] text-gray-500">Tapos</div>
-            <div className="font-roboto font-medium text-[16px] leading-[19px] text-gray-500">Wallet</div>
-            <div className="font-roboto font-medium text-[16px] leading-[19px] text-gray-500">Leaderboard</div>
-            <div className="font-roboto font-medium text-[16px] leading-[19px] text-gray-500">Shop</div>
+            <div className="font-roboto font-medium text-[16px] leading-[19px] text-gray-500 cursor-pointer">Tapos</div>
+            <div className="font-roboto font-medium text-[16px] leading-[19px] text-gray-500 cursor-pointer">Wallet</div>
+            <div className="font-roboto font-medium text-[16px] leading-[19px] text-gray-500 cursor-pointer">Leaderboard</div>
+            <div className="font-roboto font-medium text-[16px] leading-[19px] text-gray-500 cursor-pointer">Shop</div>
             <div className="flex flex-row items-center text-[#CA5C3B]">
               <div className="flex flex-row items-center gap-[4px] w-[38px] h-[19px]">
                 <span className="text-[#CA5C3B]">More</span>

@@ -13,13 +13,17 @@ import right from './assets/chevron-right.png'
 function Content() {
     return (
         <>
-            <div className="">
-                <img className="absolute w-10 h-9 left-[1402px] top-[240.47px] bg-[#D27815] transform -rotate-[9.29deg]" src={icon} alt="" />
-                <img className="absolute w-10 h-9 left-[1249px] top-[149.31px] bg-[#D27815] transform -rotate-[9.51deg]" src={icon} alt="" />
-                <img className="absolute w-10 h-9 left-[1362px] top-[160.47px] bg-[#D27815] transform -rotate-[9.29deg]" src={icon} alt="" />
-                <img className="absolute w-10 h-9 left-[1299px] top-[219.31px] bg-[#D27815] transform -rotate-[9.51deg]" src={icon} alt="" />
-            </div>
-            <div className="absolute flex flex-col items-start gap-20 w-[1008px] h-[2006px] left-[216px] top-[158px]">
+
+
+            <div className="relative mx-auto flex flex-col items-start gap-20 w-[1008px] h-[2006px]  top-[158px]">
+
+            <div className="absolute left-[939px] w-[220px] ">
+                    <img className=" w-10 h-9 ml-9 bg-[#D27815] transform -rotate-[9.29deg]" src={icon} alt="" />
+                    <img className=" w-10 h-9 mt-2 ml-36 bg-[#D27815] transform -rotate-[9.51deg]" src={icon} alt="" />
+                    <img className=" w-10 h-9 mt-4 ml-20 bg-[#D27815] transform -rotate-[9.29deg]" src={icon} alt="" />
+                    <img className=" w-10 h-9 mt-2 ml-44 bg-[#D27815] transform -rotate-[9.51deg]" src={icon} alt="" />
+                </div>
+
                 <div className="flex flex-col items-center gap-4 w-[1008px] h-[297px]">
                     <div className="text-[40px] font-bold text-black">Sosial Tasks</div>
                     <div className="text-center text-[14px] text-[#6B6B6B]">Complete the Social Tasks to earn extra $Heart token</div>
