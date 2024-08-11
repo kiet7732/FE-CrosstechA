@@ -1,6 +1,7 @@
+import '../index.css'
 import { useState } from 'react';
-import logoV from './assets/logo.png';
-import SVG from './assets/chevron-down.png';
+import logoV from '../assets/logo.png';
+import SVG from '../assets/chevron-down.png';
 
 function Nav() {
   const [isShifted, setIsShifted] = useState(false);
@@ -12,7 +13,7 @@ function Nav() {
   };
 
   return (
-    <div className="w-full h-[2336px] bg-gradient-to-b from-white to-[#EADBD7] flex justify-center items-start absolute">
+    <div className="w-full h-[740px] bg-gradient-to-b from-white to-[#EADBD7] flex justify-center items-start absolute">
       <div className="w-[1440px] h-[98px] mx-auto relative">
         <div className="absolute w-[1220px] h-[40px] left-[110px] top-[29px]">
           <img src={logoV} className="absolute w-[52.8px] h-[40px] left-0 top-0 cursor-pointer" alt="Logo" />
