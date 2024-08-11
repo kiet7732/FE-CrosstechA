@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import  Nav  from "./layout/Nav.tsx";// App.tsx
-import Content from "./layout/Content.tsx";
-
+import { useState, useEffect } from 'react';
 import { IUser } from "./type/index";
-import { HomeAPI } from "./services/homeServices"
+import { HomeAPI } from "./services/homeServices";
+import Nav from './layout/Nav.tsx';
+import Content from './layout/Content.tsx';
 
 function App() {
   const [user, setUser] = useState<IUser[]>([]);
@@ -11,10 +10,9 @@ function App() {
   const getUser = async () => {
     try {
       const rq = await HomeAPI.getUser();
-      console.log(rq);
-      // setUser(response.data); 
-      } catch (error) {
-      console.error(error);
+      setUser(rq.data); 
+    } catch (error) {
+      console.error('Error fetching user data:', error);
     }
   };
 
@@ -24,8 +22,8 @@ function App() {
 
   return (
     <>
-       <Nav/>
-       <Content/>
+      <Nav />
+      <Content />
     </>
   );
 }
