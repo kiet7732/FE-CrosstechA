@@ -5,11 +5,13 @@ import SVG from '../assets/chevron-down.png';
 import { siteMenu } from "../common/site";
 import { RouterLink } from "../util/RouterLink";
 import clsx from 'clsx';
+import { useNavigate } from 'react-router-dom';
 
 function Nav() {
   const [isShifted, setIsShifted] = useState(false);
   const [isN1Active, setIsN1Active] = useState(true);
 
+  const navige = useNavigate();
   const [active, setActive] = useState<string>(RouterLink.Tapos);
 
   const handleClick = () => {
@@ -17,16 +19,28 @@ function Nav() {
     setIsN1Active(!isN1Active);
   };
 
+  const handleLogoClick = () => {
+    window.location.href = RouterLink.Logo;
+  };
+
   return (
     <div className="w-full h-[740px] bg-gradient-to-b from-white to-[#EADBD7] flex justify-center items-start absolute">
       <div className="w-[1440px] h-[98px] mx-auto relative">
         <div className="absolute w-[1220px] h-[40px] left-[110px] top-[29px]">
-          <img src={logoV} className="absolute w-[52.8px] h-[40px] left-0 top-0 cursor-pointer" alt="Logo" />
+          <img
+            src={logoV}
+            className="w-[52.8px] h-[40px] cursor-pointer"
+            alt="Logo"
+            onClick={handleLogoClick}
+          />
           <div className="flex flex-row items-center absolute w-[407px] h-[24px] left-1/2 transform -translate-x-1/2 top-[10.5px] gap-[32px]">
             {
               siteMenu.map(e => (
                 <div
-                onClick={() => setActive(e.link)}
+                  onClick={() => {
+                    navige(e.link);
+                    setActive(e.link);
+                  }}
                   className={clsx(
                     active === e.link ? "" : "text-neutral-500",
                     "font-roboto font-medium text-[16px] leading-[19px] cursor-pointer "

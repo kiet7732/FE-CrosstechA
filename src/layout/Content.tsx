@@ -1,6 +1,6 @@
 import '../index.css'
 import icon from '../assets/Vector.jpg';
-import {ButtonConnect} from '../component/ButtonConnect';
+import { ButtonConnect } from '../component/ButtonConnect';
 
 // import Ball from '../assets/ball.png'
 // import meo from '../assets/meo.png'
@@ -19,7 +19,7 @@ function Content() {
 
             <div className="relative mx-auto flex flex-col items-start gap-20 w-[1008px]  top-[158px]">
 
-            <div className="absolute left-[939px] w-[220px] ">
+                <div className="absolute left-[939px] w-[220px] ">
                     <img className=" w-10 h-9 ml-9 bg-[#D27815] transform -rotate-[9.29deg]" src={icon} alt="" />
                     <img className=" w-10 h-9 mt-2 ml-36 bg-[#D27815] transform -rotate-[9.51deg]" src={icon} alt="" />
                     <img className=" w-10 h-9 mt-4 ml-20 bg-[#D27815] transform -rotate-[9.29deg]" src={icon} alt="" />
@@ -36,11 +36,11 @@ function Content() {
                                 <div className="text-[14px] font-medium text-[#5A5A5A]">You need connect your X account to join Social Task</div>
                                 <div className="text-[14px] font-normal text-[#0D88D8]"><a href="">Learn more {'>'}</a></div>
                             </div>
-                            <ButtonConnect/>
+                            <ButtonConnect />
                         </div>
                     </div>
                 </div>
-                
+
 
             </div></>
     );

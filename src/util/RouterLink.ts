@@ -1,7 +1,8 @@
-export enum RouterLink{
-    Logo = "/login",
+export enum RouterLink {
+    Logo = "/",
     Tapos = "/tapos",
     Wallet = "/wallet",
     Leaderboard = "/leaderboard",
-    Shop = "/Shop",
-}
+    Shop = "/shop",
+  }
+  
