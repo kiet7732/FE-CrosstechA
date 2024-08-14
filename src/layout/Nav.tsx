@@ -2,10 +2,15 @@ import '../index.css'
 import { useState } from 'react';
 import logoV from '../assets/logo.png';
 import SVG from '../assets/chevron-down.png';
+import { siteMenu } from "../common/site";
+import { RouterLink } from "../util/RouterLink";
+import clsx from 'clsx';
 
 function Nav() {
   const [isShifted, setIsShifted] = useState(false);
   const [isN1Active, setIsN1Active] = useState(true);
+
+  const [active, setActive] = useState<string>(RouterLink.Tapos);
 
   const handleClick = () => {
     setIsShifted(!isShifted);
@@ -18,10 +23,20 @@ function Nav() {
         <div className="absolute w-[1220px] h-[40px] left-[110px] top-[29px]">
           <img src={logoV} className="absolute w-[52.8px] h-[40px] left-0 top-0 cursor-pointer" alt="Logo" />
           <div className="flex flex-row items-center absolute w-[407px] h-[24px] left-1/2 transform -translate-x-1/2 top-[10.5px] gap-[32px]">
-            <div className="font-roboto font-medium text-[16px] leading-[19px] text-gray-500 cursor-pointer">Tapos</div>
-            <div className="font-roboto font-medium text-[16px] leading-[19px] text-gray-500 cursor-pointer">Wallet</div>
-            <div className="font-roboto font-medium text-[16px] leading-[19px] text-gray-500 cursor-pointer">Leaderboard</div>
-            <div className="font-roboto font-medium text-[16px] leading-[19px] text-gray-500 cursor-pointer">Shop</div>
+            {
+              siteMenu.map(e => (
+                <div
+                onClick={() => setActive(e.link)}
+                  className={clsx(
+                    active === e.link ? "" : "text-neutral-500",
+                    "font-roboto font-medium text-[16px] leading-[19px] cursor-pointer "
+                  )}
+                >
+                  {e.title}
+                </div>
+              ))
+            }
+
             <div className="flex flex-row items-center text-[#CA5C3B]">
               <div className="flex flex-row items-center gap-[4px] w-[38px] h-[19px]">
                 <span className="text-[#CA5C3B]">More</span>
